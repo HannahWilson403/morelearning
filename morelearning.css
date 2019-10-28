@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+body{
+    background-color: bisque;
+    font-size: 22px;
+    line-height: 32px;
+    color: black;
+    word-wrap: break-word !important;
+    font-family: "Open Sans", "sans-serif";
+
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+a{
+    color: ivory;
+}
+
+
+#container{
+    margin: 0 auto;
+}
+
+nav{
+    margin: 50px 0;
+    background-color: lightcoral;
+}
+
+nav ul{
+    padding: 0;
+    margin:0 ;
+    list-style: none;
+    position: relative;
+}
+
+
+nav ul li {
+    display: inline-block;
+    background-color: lightcoral;
+
+}
+
+nav a{
+    display: block;
+    padding: 0 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: black;
+}
+
+
+/* hides nested ul*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul{
+    /* shows when hover over */
+    display: inherit ;
+}
+
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+
+nav ul ul li:hover > ul {
+    display: inherit;
+    top: 0;
+    position: absolute;
+}
+
+nav ul ul ul li {
+position: relative;
+top: 0;
+left: 170px;
+}
+
+li > a:after {
+    content: "->"
+}
+
+li > a:only-child:after {
+content: " ";
+}
